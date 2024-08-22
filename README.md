@@ -4,38 +4,28 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ### Installation
 
-```
-$ yarn
-```
-
-### Local Development
+To install the necessary dependencies, run the following command:
 
 ```
-$ yarn start
+$ npm install
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
 
-```
-$ yarn build
-```
+To generate the static content for the site, use the following command:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
 
 ```
-$ USE_SSH=true yarn deploy
+$ npm run build
+```
+This will output the static content to the build directory, which can then be served by any static content hosting service. Please note that the search functionality will only be available after running the build process.
+
+### Serve
+
+To preview the site locally, you can serve the generated content using:
+
+```
+$ npm run serve
 ```
 
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This will serve the static content in the build directory on a local server.
